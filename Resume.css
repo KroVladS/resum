@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    background-color: #d4d4d47c;
+    color: #050a14;
+    margin: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar {
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #050a148f;
+    margin: 0px;
+
+}
+
+.info-text {
+    margin: 10px 40px;
+}
+
+.info {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.info h1 {
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.info h3 {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.bg_green {
+    background: lightgreen;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    /* transition: all .2s; */
+}
+
+a:hover {
+    color: orange;
+    /* font-size: 2rem; */
+}
+
+/* a:visited {
+    color: red;
+} */
+
+/* a:active {
+    color: blue;
+} */
+
+.btn {
+
+    background: black;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: orange;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: gray;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+
+.form-row .form-group {
+    /* display: inline-block; */
+    /* width: calc(50% - 20px); */
+    margin-right: 20px;
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        display: block;
+        /* text-align: center; */
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 20;
+        margin-bottom: 10px;
+    }
+
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}

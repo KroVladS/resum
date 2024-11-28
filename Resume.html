@@ -7,80 +7,98 @@
     <meta name="description" content="Резюме Владимира Кротова">
     <meta name="keywords" content="html, cours, css, tags">
     <title>Resume Vladimir Krotov</title>
+    <link rel="stylesheet" href="Resume.css">
 </head>
 
 <body>
-    <img src="Avatar.jpg" alt="Avatar" width="200">
-    <H1>Владимир Кротов</H1>
-    <P>Я разработчик <Strong>1с</Strong> который хочет
-        освоить <em>разработку FrontEnd</em></P>
-    <p>Я люблю заниматься спортом, катать на <strong>велосипеде</strong>
-        и программировать</p>
-    <hr>
-    <h4>Мои соц сети:</h4>
-    <a href="https://vk.com/krovlads">VK</a>|
-    <a href="https://t.me/KroVladS">Telegram</a>
-    <hr>
-    <h4>Мои хобби:</h4>
-    <oi>
-        <li>Спорт</li>
-        <li>Велосипед</li>
-        <li>программировать</li>
-    </oi>
-    <hr>
 
-    <h1>Опыт работы</h1>
+    <div class="container">
+        <div class="info">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название работы</th>
-                <th>Должность</th>
-                <th>Период</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Байкал</td>
-                <td>Разработчик 1с</td>
-                <td>2019-2024</td>
-            </tr>
-            <tr>
-                <td>Цифроград</td>
-                <td>Начальник отдела разработки 1с</td>
-                <td>2018-2019</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Связаться со мной</h3>
-    <form>
-        <div>
-            <label for="Name">Ваше имя:</label>
-            <input type="text" id="Name" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="Email">Ваш email:</label>
-            <input type="email" id="Email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+            <img src="Avatar.jpg" alt="Avatar" class="avatar">
+
+            <div class="info-text">
+                <h1>Владимир Кротов</h1>
+                <P>Я разработчик <Strong>1с</Strong> который хочет
+                    освоить <em>разработку FrontEnd</em></P>
+                <p>Я люблю заниматься спортом, катать на <strong>велосипеде</strong>
+                    и программировать</p>
+                <hr>
+                <h3>Мои соц сети:</h3>
+                <a href="https://vk.com/krovlads">VK</a>|
+                <a href="https://t.me/KroVladS">Telegram</a>
+            </div>
         </div>
 
-        <div>
-            <label for="food">Подписаться на рассылку</label>
-            <input type="checkbox" name="food">email
-            <input type="checkbox" name="food">sms
-            <input type="checkbox" name="food">телефон
+        <div class="card bg_green">
+            <h2>Мои хобби:</h2>
+            <oi class="list">
+                <li>Спорт</li>
+                <li>Велосипед</li>
+                <li>программировать</li>
+            </oi>
         </div>
 
-        <button type="submit">Отправить</button>
 
-    </form>
+        <div class="card bg_green">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название работы</th>
+                        <th>Должность</th>
+                        <th>Период</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Байкал</td>
+                        <td>Разработчик 1с</td>
+                        <td>2019-2024</td>
+                    </tr>
+                    <tr>
+                        <td>Цифроград</td>
+                        <td>Начальник отдела разработки 1с</td>
+                        <td>2018-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 
+        <form class="form">
+            <h3>Связаться со мной</h3>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Name">Ваше имя:</label>
+                    <input type="text" id="Name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Ваш email:</label>
+                    <input type="email" id="Email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+
+                <textarea name="message" id="message" cols="50" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="food">Подписаться на рассылку</label>
+                <input type="checkbox" name="food">email
+                <input type="checkbox" name="food">sms
+                <input type="checkbox" name="food">телефон
+            </div>
+
+            <button type="submit" class="btn">Отправить</button>
+
+        </form>
+    </div>
 </body>
 
 </html>
